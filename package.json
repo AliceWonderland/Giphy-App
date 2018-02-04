@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "scss": "node-sass --watch --recursive public -o public",
-    "start-dev": "webpack -w & nodemon server",
+    "start-prod": "node server",
+    "start-dev": "nodemon server",
+    "start": "npm run watch & npm run start-dev & npm run scss",
+    "build-prod": "webpack --config webpack.prod.js",
     "build": "webpack"
   },
   "author": "Alice Chuang",
@@ -15,6 +18,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-styled-components": "^1.5.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
@@ -23,7 +27,8 @@
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.1",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -34,6 +39,7 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "styled-components": "^3.1.5"
   }
 }

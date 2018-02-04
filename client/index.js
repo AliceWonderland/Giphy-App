@@ -7,16 +7,29 @@ import { PropTypes } from 'prop-types';
 import { Provider, connect } from 'react-redux';
 import { createStore } from 'redux';
 import { giphyApp } from './store';
-import '../public/styles.css';
+import '../public/styles.scss';
 
 
-import { Home } from './components';
+import { Giphy, App, Header, Reddit } from './components';
 
 let store = createStore(giphyApp);
+import { history } from './history.js';
 
 ReactDOM.render(
   <Provider store={store}>
-    <Home />
+      <Router path="/" history={history}>
+          <div className="App">
+              <Header path={window.location.href} />
+              <Switch>
+                  <Route exact path="/" component={Reddit} />
+                  <Route exact path="/giphy" component={Giphy} />
+				  {/*<Route exact path="/portfolio/:cat" component={Portfolio} />*/}
+                  <Route component={Reddit} />
+                  <Route path='*' component={Reddit} />
+              </Switch>
+          </div>
+      </Router>
   </Provider>,
   document.getElementById('app')
 );
+

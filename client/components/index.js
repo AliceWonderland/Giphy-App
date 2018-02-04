@@ -1,9 +1,4 @@
-export {default as Home} from './Home.js';
-// export {default as Footer} from './Footer.js';
-// export {default as Home} from './Home.js';
-// export {default as About} from './About.js';
-// export {default as Bio} from './Bio.js';
-// export {default as Resume} from './Resume.js';
-// export {default as Portfolio} from './Portfolio.js';
-// export {default as Master} from './Master.js';
-// export {default as Modal} from './Modal.js';
+export {default as Giphy} from './Giphy.js';
+export {default as App} from './App.js';
+export {default as Header} from './Header.js';
+export {default as Reddit} from './Reddit.js';

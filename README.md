@@ -1,4 +1,4 @@
-# GIPY APP
+# GIPHY APP
 
 React
 React-Redux
