@@ -37,8 +37,8 @@ http://meme.alicechuang.com/
 * https://github.com/github/fetch
 
 # Installation
-git clone `https://github.com/AliceWonderland/Giphy-App.git`
-browse to folder `Giphy-App`
-run `npm install`
-run `npm run start`
-browse to http://localhost:7000/ in web browser
+* git clone `https://github.com/AliceWonderland/Giphy-App.git`
+* browse to folder `Giphy-App`
+* run `npm install`
+* run `npm run start`
+* browse to http://localhost:7000/ in web browser
