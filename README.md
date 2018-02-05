@@ -1,5 +1,5 @@
 # GIPHY APP
-Search for the latest trending Gifs or your favorite from Giphy or Reddit!
+Search for the latest trending Gifs in your favorite categories from Giphy or Reddit!
 
 This React App uses Giphy API and Reddit API to access data from each site respectively.
 
