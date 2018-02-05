@@ -91,8 +91,8 @@ class Reddit extends Component {
 		.then((response) => response.json())
 		.then((responseJson) => {
 			console.log(responseJson.data.children);
-			this.setState({data: responseJson});
-			this.setState({items: responseJson.data.children});
+			this.setState({data: responseJson, items: responseJson.data.children});
+			// this.setState({items: responseJson.data.children});
 		})
 		.catch((error) => {
 			console.error(error);

@@ -2352,6 +2352,15 @@ body {
   padding: 20px;
   color: white; }
 
+.App .App-header nav {
+  position: absolute;
+  left: 93%;
+  white-space: nowrap; }
+
+.App .App-header nav a {
+  color: #fff;
+  text-decoration: none; }
+
 .App .App-title {
   font-size: 1.5em; }
 

@@ -44,14 +44,13 @@ const GiphyItem = styled.div`
 
   /* pseudo selectors work as well */
   &:hover {
-    background: #fff5f79c;
+    background: #e4c6c654;
   	border:1px solid deeppink;
     opacity: 1;
     
     a{
     	color:hotpink;
     }
-    
     a:hover, a > *:hover{
 		color: deeppink;
 	}
@@ -63,7 +62,6 @@ const GiphyItem = styled.div`
 	h2{
 		color:deeppink;
 	}
-	
     h2 > a{
     	color: deeppink;
     }
@@ -124,8 +122,6 @@ class Giphy extends Component {
 			}else{
 				this.setState({gifs: responseJson.data});
 			}
-
-			// this.setState({searchHistory:[this.state.search,...this.state.searchHistory]});
 		})
 		.catch((error) => {
 			console.error(error);
@@ -135,6 +131,7 @@ class Giphy extends Component {
 	}
 
 	handleClick(e){
+		// if click is from sidebar
 		if(typeof e === 'string'){
 			this.setState({search:e},() => {
 				this.getAPI();
@@ -143,6 +140,7 @@ class Giphy extends Component {
 		}
 		console.log('key',e.key, e, e.target, e.target.key, e.target.value);
 
+		// if click is from search form
 		if(e.key == 'Enter' || e.target.value==='Go'){
 			this.getAPI();
 		}
@@ -163,14 +161,14 @@ class Giphy extends Component {
 	render() {
 		let gifs=this.state.gifs;
 		let history=this.state.searchHistory;
-		console.log('render',this.state);
+
 		return (
 		  <main className="giphy">
 
 			  <GiphySearch>
 				  <h1>#</h1>
 				  <form onSubmit={this.handleSubmit}>
-					  <input type="text" defaultValue={this.state.search} value={this.state.search} onChange={this.handleChange} onKeyPress={this.handleClick} onFocus={this.handleFocus} onBlur={this.handleBlur}  />
+					  <input type="text" value={this.state.search} onChange={this.handleChange} onKeyPress={this.handleClick} onFocus={this.handleFocus} onBlur={this.handleBlur}  />
 				  </form>
 			  </GiphySearch>
 
@@ -207,8 +205,6 @@ class Giphy extends Component {
 				  </section>
 
 			  </section>
-
-
 
 		  </main>
 		);

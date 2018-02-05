@@ -23,6 +23,7 @@ ReactDOM.render(
               <Switch>
                   <Route exact path="/" component={Reddit} />
                   <Route exact path="/giphy" component={Giphy} />
+                  <Route exact path="/reddit" component={Reddit} />
 				  {/*<Route exact path="/portfolio/:cat" component={Portfolio} />*/}
                   <Route component={Reddit} />
                   <Route path='*' component={Reddit} />
