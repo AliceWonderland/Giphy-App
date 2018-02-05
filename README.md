@@ -7,7 +7,7 @@ I chose Styled-Components to try out for this demo.
 
 http://meme.alicechuang.com/
 
-![](https://github.com/AliceWonderland/Distances-App/blob/master/dist/distances.png)
+![](https://github.com/AliceWonderland/Giphy-App/blob/master/public/assets/imgs/giphy-app.png)
 
 # Packages
 **React**
