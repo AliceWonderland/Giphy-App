@@ -38,7 +38,7 @@ http://meme.alicechuang.com/
 
 # Installation
 From Command Line Terminal:
-* git clone `https://github.com/AliceWonderland/Giphy-App.git`
+* run `git clone https://github.com/AliceWonderland/Giphy-App.git`
 * browse to folder `Giphy-App`
 * run `npm install`
 * run `npm run start`
