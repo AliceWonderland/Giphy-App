@@ -44,7 +44,7 @@ const GiphyItem = styled.div`
 
   /* pseudo selectors work as well */
   &:hover {
-    background: #e4c6c654;
+    background: #ffb6c11f;
   	border:1px solid deeppink;
     opacity: 1;
     
