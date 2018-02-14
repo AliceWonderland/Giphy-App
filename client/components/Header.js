@@ -39,7 +39,7 @@ class Header extends Component {
 					  {linkName} <i className="fa fa-arrow-right" aria-hidden="true"></i>
 				  </Link>
 			  </nav>
-			  <i className={(page==='giphy' ? 'fa fa-picture-o fa-6' : 'fa fa-reddit-alien fa-6')} aria-hidden="true"></i>
+			  <i className={(page==='Giphy' ? 'fa fa-picture-o fa-6' : 'fa fa-reddit-alien fa-6')} aria-hidden="true"></i>
 			  <h1 className="App-title">Hello, {page}!</h1>
 		  </header>
 		);
